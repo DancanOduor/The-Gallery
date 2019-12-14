@@ -2,7 +2,7 @@
 # Dancan Oduor
 
 # Description
-*Gallery is a website application that shows different image. Users have to see photos and search the images based on the category and also user can copy the link of the images by right clicking on the prefered image.Admin uploads images,delete and update the images.
+* Gallery is a website application that shows different image. Users have to see photos and search the images based on the category and also user can copy the link of the images by right clicking on the prefered image.Admin uploads images,delete and update the images.
 
 # Set Up and Installations
 * Ubuntu Software
@@ -39,4 +39,4 @@ user can click on copy link button and copy the link of the image.
 
 
 # LINCENSE
-* MIT(https://choosealicense.com/licenses/mit/)
+*[MIT](https://choosealicense.com/licenses/mit/)
