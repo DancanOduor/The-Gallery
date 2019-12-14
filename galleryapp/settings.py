@@ -88,6 +88,8 @@ DATABASES = {
         'NAME':'gallery',
         'USER':'moringa',
         'PASSWORD':'5555',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
