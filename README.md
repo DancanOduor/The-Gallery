@@ -39,4 +39,4 @@ user can click on copy link button and copy the link of the image.
 
 
 # LINCENSE
-*[MIT](https://choosealicense.com/licenses/mit/)
+* [MIT](https://choosealicense.com/licenses/mit/)
