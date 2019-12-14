@@ -20,3 +20,7 @@
 
 user can click on copy link button and copy the link of the image.
 
+
+# Clone the Repo
+* Run the following command on the terminal: git clone https://github.com/DancanOduor/The-Gallery.git
+* type cd gallery on terminal
