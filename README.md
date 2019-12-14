@@ -36,3 +36,7 @@ user can click on copy link button and copy the link of the image.
 # Support and contact details
  * Get me at:Dancunsterio@gmail.com
 
+
+
+# LINCENSE
+* MIT(https://choosealicense.com/licenses/mit/)
