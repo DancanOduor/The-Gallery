@@ -24,3 +24,11 @@ user can click on copy link button and copy the link of the image.
 # Clone the Repo
 * Run the following command on the terminal: git clone https://github.com/DancanOduor/The-Gallery.git
 * type cd gallery on terminal
+
+# Technologies used
+* Python 3.6
+* HTML for the structure
+* Bootstrap 3 for the design
+* JavaScript
+* Heroku for the deployment
+* Postgresql for the database
