@@ -11,3 +11,12 @@
 * python virtualenv
 * django==1.11
 * bootstrap 3
+
+
+# Specifications
+* user can view different images and she/he hover the prefered image,it automatically be zoomed,and when he/she click on preferded image it automatically shows the name,description,the location of the image with the zoomed images.
+
+* when user type any category on a search button,it automatically display the image of that category.
+
+user can click on copy link button and copy the link of the image.
+
