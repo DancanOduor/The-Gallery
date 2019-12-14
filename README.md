@@ -32,3 +32,7 @@ user can click on copy link button and copy the link of the image.
 * JavaScript
 * Heroku for the deployment
 * Postgresql for the database
+
+# Support and contact details
+ * Get me at:Dancunsterio@gmail.com
+
