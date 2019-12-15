@@ -7,6 +7,7 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.views.generic import RedirectView
 
 
 urlpatterns=[
@@ -15,6 +16,7 @@ urlpatterns=[
     url(r'^detail/(\d+)', views.detail, name='detail'),
     url(r'^location/(\d+)', views.location, name='location'),
     url(r'^share/(\d+)', views.share, name='share'),
+    url(r'^favicon\.ico$',RedirectView.as_view(url='/static/images/favicon.ico')),
     # url('', views.homepageview, name='home'),
 ]
 ## new static route that references the location to the uploaded files

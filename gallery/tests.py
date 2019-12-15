@@ -7,7 +7,7 @@ class LocationTestClass(TestCase):
     '''
     # Set up method
     def setUp(self):
-        self.loca= Location(country = 'Rwanda')
+        self.loca= Location(country = 'Kenya')
     def test_instance(self):
         self.assertTrue(isinstance(self.loca,Location))
     def test_save_method(self):
@@ -16,9 +16,9 @@ class LocationTestClass(TestCase):
         self.assertTrue(len(location) > 0)
     def test_update(self):
         self.loca.save_location()
-        location= Location.objects.filter(country="Rwanda").first()
-        update = Location.objects.filter(id=location.id).update(country="Nigeria")
-        updated = Location.objects.filter(country="Nigeria").first()
+        location= Location.objects.filter(country="Senegal").first()
+        update = Location.objects.filter(id=location.id).update(country="Dubai")
+        updated = Location.objects.filter(country="US").first()
         self.assertTrue(Location.country,updated.country)
     
 
@@ -49,11 +49,11 @@ class ImageTestClass(TestCase):
     '''
 
     def setUp(self):
-        self.loca= Location(country= 'Rwanda')
+        self.loca= Location(country= 'kenya')
         self.loca.save()
         self.cat = Category(category = 'Animals')
         self.cat.save()
-        self.new_image= Image(image = 'dog.jpg',name = 'twin dog',description = 'amazing dogs you can buy',location = self.loca,category = self.cat)
+        self.new_image= Image(image = '',name = 'Lion',description = 'Lion having some nice pose',location = self.loca,category = self.cat)
     def test_instance(self):
         self.assertTrue(isinstance(self.new_image,Image))
     def test_save_image(self):
