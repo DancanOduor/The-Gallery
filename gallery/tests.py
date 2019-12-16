@@ -17,7 +17,7 @@ class LocationTestClass(TestCase):
     def test_update(self):
         self.loca.save_location()
         location= Location.objects.filter(country="Senegal").first()
-        update = Location.objects.filter(id=location.id).update(country="Dubai")
+        update = Location.objects.filter(id=location.id).update(country="")
         updated = Location.objects.filter(country="US").first()
         self.assertTrue(Location.country,updated.country)
     
