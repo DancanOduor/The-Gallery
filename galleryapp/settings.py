@@ -30,7 +30,7 @@ SECRET_KEY = '(dfd0tsdbu%nin)8x+^h^$avqj_vbg0-@^=ko*m2cbhen0waj7'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 # DEBUG = True
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'dansteric.herokuapp.com']
 
@@ -134,10 +134,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
