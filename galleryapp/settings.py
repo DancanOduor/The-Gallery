@@ -11,9 +11,9 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-# import django_heroku
+import django_heroku
 import dj_database_url
-# from decouple import config,Csv
+from decouple import config,Csv
 
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag')
 
@@ -157,7 +157,7 @@ STATICFILES_DIRS = (
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Configure django App for Heroku.
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
 
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
