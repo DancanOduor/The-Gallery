@@ -10,3 +10,17 @@ footer{
     
 }
 
+html,
+body,
+img,
+figure {
+    max-width: 100%
+}
+
+html,
+body {
+    overflow-x: hidden;
+    color: #000;
+    -ms-overflow-style: scrollbar;
+    -webkit-font-smoothing: antialiased
+}
