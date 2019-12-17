@@ -2,10 +2,6 @@ from django.db import models
 from django.db import models
 from pyuploadcare.dj.models import ImageField
 
-
-class Post(models.Model):
-    photo = ImageField(blank=True, manual_crop="")
-
 # Create your models here.
 class Location(models.Model):
     country=models.CharField(max_length=50)
@@ -34,7 +30,7 @@ class Category(models.Model):
         cate.update(category=name)
         return cate
 class Image(models.Model):
-    image = models.ImageField(upload_to = 'pictures/')
+    image = ImageField(manual_crop='', blank=True)
     name = models.CharField(max_length =60)
     description = models.TextField()
     location = models.ForeignKey(Location)

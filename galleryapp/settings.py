@@ -39,6 +39,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'dansteric.herokuapp.com']
 
 INSTALLED_APPS = [
     'gallery',
+    'pyuploadcare.dj',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -47,7 +48,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap3',
     'instagrid',
-    'pyuploadcare.dj',
 ]
 
 MIDDLEWARE = [
@@ -83,8 +83,8 @@ TEMPLATES = [
 ]
 
 UPLOADCARE = {
-    'pub_key': 'YOUR_PUBLIC_KEY',
-    'secret': '(dfd0tsdbu%nin)8x+^h^$avqj_vbg0-@^=ko*m2cbhen0waj7)',
+    'pub_key': '333bc3b82c9477533a93',
+    'secret': '8c48ed6135a024fa7fdf',
 }
 
 
@@ -97,8 +97,7 @@ WSGI_APPLICATION = 'galleryapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'NAME':'gallery',
+        'NAME':'test',
         'USER':'moringa',
         'PASSWORD':'5555',
         'HOST': '127.0.0.1',
