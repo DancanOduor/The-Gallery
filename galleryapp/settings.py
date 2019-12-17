@@ -29,8 +29,8 @@ SECRET_KEY = '(dfd0tsdbu%nin)8x+^h^$avqj_vbg0-@^=ko*m2cbhen0waj7)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-# DEBUG = True
-DEBUG = os.environ.get('DEBUG')
+DEBUG = True
+# DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'dansteric.herokuapp.com']
 
@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap3',
+    'instagrid',
+    'pyuploadcare.dj',
 ]
 
 MIDDLEWARE = [
@@ -65,6 +67,7 @@ ROOT_URLCONF = 'galleryapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+         'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -78,6 +81,12 @@ TEMPLATES = [
         },
     },
 ]
+
+UPLOADCARE = {
+    'pub_key': 'YOUR_PUBLIC_KEY',
+    'secret': '(dfd0tsdbu%nin)8x+^h^$avqj_vbg0-@^=ko*m2cbhen0waj7)',
+}
+
 
 WSGI_APPLICATION = 'galleryapp.wsgi.application'
 
