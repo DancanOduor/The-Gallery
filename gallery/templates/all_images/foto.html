@@ -13,7 +13,7 @@
       <div class="col-md-4">
         <a data-toggle="modal" data-target="#{{img.id}}">
           <img style="margin-top:20px; margin-bottom:20px;" src="{{img.image.cdn_url}}" alt="Image" height="200"
-            width="300"><br><br>
+            width="300" class="img-responsive" alt="img"><br><br>
         </a>
       </div>
 
@@ -36,7 +36,7 @@
               <!-- The button used to copy the text -->
               <button class="btn btn-primary" onclick="imageurl('{{image.id}}-url')">Copy Image link</button>
               <input class="form-control input-lg" type="text" value="{{img.image.cdn_url}}"
-                id="{{image.id}}-url">
+                id="{{image.id}}-url" class="img-responsive" alt="img"> 
             </div>
             <script>
               //  <!-- scripts doesn't work-->

@@ -4,6 +4,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 
     {% if title %}
@@ -11,13 +12,11 @@
     {% else %}
     <title> My Gallery</title>
     {% endif %}
-
     {% block styles %}
     {% bootstrap_css %}
     <link rel="stylesheet" href="{% static 'css/basenews.css' %}">
     {% endblock %}
 </head>
-
 <body>
         {% include "navbar.html" %}
     {% block content %} 
@@ -26,13 +25,11 @@
             <h1 style="text-align: center; font-family: 'Great Vibes', cursive;font-size: 50px; color: black;"class='text-center'>My-Gallery</h1>
         </div>
     </div>
-    
     {%endblock%}
     {% block scripts %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      {% bootstrap_javascript %}
     {% endblock %}
-
     <footer class="bg-dark text-white mt-4">
         <div class="container-fluid py-3">
             <div class="row">
