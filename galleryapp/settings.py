@@ -29,8 +29,8 @@ SECRET_KEY = '(dfd0tsdbu%nin)8x+^h^$avqj_vbg0-@^=ko*m2cbhen0waj7)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True
-# DEBUG = os.environ.get('DEBUG')
+# DEBUG = True
+DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'dansteric.herokuapp.com']
 
