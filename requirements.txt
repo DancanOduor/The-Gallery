@@ -8,7 +8,7 @@ django-gallery==0.1
 django-heroku==0.3.1
 gunicorn==20.0.4
 idna==2.8
-Pillow==6.2.1
+Pillow==8.2.0
 psycopg2==2.8.4
 psycopg2-binary==2.8.4
 pycparser==2.19
